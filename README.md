@@ -21,5 +21,7 @@ source myenv/bin/activate
 
 pip install pygraphviz eralchemy
 
+![Alt Text](https://github.com/Timjini/diagram-generator/blob/main/guides.png?raw=true)
+
 
 ---
