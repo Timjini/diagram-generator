@@ -1,0 +1,26 @@
+# Virtual environment
+myenv/
+path/
+
+# Python-specific
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Byte-compiled or cached files
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.pyd
+
+# Log files
+*.log
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+
+# OS files

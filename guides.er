@@ -1,0 +1,25 @@
+[guides]
+    *id {label:"INTEGER"}
+    name {label:"VARCHAR(150)"}
+    bio {label:"TEXT"}
+    photo_url {label:"VARCHAR(255)"}
+    specialties {label:"TEXT"}  // JSON or comma-separated list
+    average_rating {label:"FLOAT"}
+
+[tours]
+    *id {label:"INTEGER"}
+    guide_id {label:"INTEGER"}
+    title {label:"VARCHAR(200)"}
+    description {label:"TEXT"}
+    start_time {label:"DATETIME"}
+    end_time {label:"DATETIME"}
+
+[reviews]
+    *id {label:"INTEGER"}
+    tour_id {label:"INTEGER"}
+    reviewer_name {label:"VARCHAR(150)"}
+    score {label:"INTEGER"}
+    comment {label:"TEXT"}
+
+guides."id" 1--* tours."guide_id"
+tours."id" 1--* reviews."tour_id"
